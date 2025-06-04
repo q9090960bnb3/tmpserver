@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  tmpserver:
+    image: tmpserver:0.0.1
+    ports:
+      - "8081:8080"
+    hostname: mytmpserver_0.0.1
+    restart: unless-stopped
